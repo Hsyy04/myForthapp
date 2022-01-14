@@ -12,7 +12,8 @@ import androidx.core.content.ContextCompat
 import java.io.File
 
 private const val REQUEST_CODE_PERMISSIONS = 999 // Return code after asking for permission
-private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA) // permission needed
+private val REQUIRED_PERMISSIONS = arrayOf(Manifest.permission.CAMERA,
+    Manifest.permission.WRITE_EXTERNAL_STORAGE)//, Manifest.permission.MOUNT_UNMOUNT_FILESYSTEMS) // permission needed
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
